@@ -1,0 +1,12 @@
+{
+	"name": "worker-vless-rs",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"publish": "wrangler deploy",
+		"dev": "wrangler dev --ip=127.0.0.1"
+	},
+	"devDependencies": {
+		"wrangler": "^3.18.0"
+	}
+}

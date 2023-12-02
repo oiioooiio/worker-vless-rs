@@ -1,0 +1,17 @@
+name = "less"
+main = "build/worker/shim.mjs"
+compatibility_date = "2023-03-22"
+
+account_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+workers_dev = true
+
+routes = [
+	{ pattern = "less.example.com", custom_domain = true }
+]
+
+[build]
+command = "cargo install -q worker-build && worker-build --release"
+
+[vars]
+UUID = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
